@@ -5,4 +5,4 @@ This contains the original binary (.p7m) files used in draft-ireland-examples-cm
 
 David Ireland  
 CryptoSys, Australia  
-<https://www.cryptosys.net/contactmsg.php>
+<https://www.cryptosys.net/contact/>
