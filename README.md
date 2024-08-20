@@ -1,6 +1,8 @@
 # examples-cms
 Examples of Cryptographic Message Syntax (CMS) Objects
 
+THIS IS A WORK IN PROGRESS - ALL FILES SUBJECT TO CHANGE
+
 This contains the PEM-encoded versions of the example files used in draft-ireland-examples-cms, along with the
 original binary files (.p7m).
 
