@@ -1,0 +1,34 @@
+  0 161: SEQUENCE {
+  3   9:   OBJECT IDENTIFIER envelopedData (1 2 840 113549 1 7 3)
+ 14 147:   [0] {
+ 17 144:     SEQUENCE {
+ 20   1:       INTEGER 2
+ 23  61:       SET {
+ 25  59:         [2] {
+ 27   1:           INTEGER 4
+ 30   7:           SEQUENCE {
+ 32   5:             OCTET STRING 'keyid'
+       :             }
+ 39  11:           SEQUENCE {
+ 41   9:             OBJECT IDENTIFIER
+       :               aes256-wrap (2 16 840 1 101 3 4 1 45)
+       :             }
+ 52  32:           OCTET STRING
+       :             D0 9D FB 46 34 3C 42 D7 7D 3D A0 22 56 AD A2 FB
+       :             B5 3C 3E CB 2E 07 C6 5C B0 BE 0B A2 D9 96 F6 64
+       :           }
+       :         }
+ 86  76:       SEQUENCE {
+ 88   9:         OBJECT IDENTIFIER data (1 2 840 113549 1 7 1)
+ 99  29:         SEQUENCE {
+101   9:           OBJECT IDENTIFIER
+       :             aes192-CBC (2 16 840 1 101 3 4 1 22)
+112  16:           OCTET STRING EE B8 E7 52 6E C7 B7 21 6B BD 27 D6 7F 22 EA D0
+       :           }
+130  32:         [0]
+       :           05 A5 87 34 11 E6 B2 C1 39 2C EC 86 F1 02 9F A1
+       :           00 62 57 FD 6D E2 69 6A AD 84 EF 70 69 5F B9 12
+       :         }
+       :       }
+       :     }
+       :   }

@@ -1,0 +1,145 @@
+  0 764: SEQUENCE {
+  4   9:   OBJECT IDENTIFIER envelopedData (1 2 840 113549 1 7 3)
+ 15 749:   [0] {
+ 19 745:     SEQUENCE {
+ 23   1:       INTEGER 2
+ 26 660:       SET {
+ 30 435:         SEQUENCE {
+ 34   1:           INTEGER 0
+ 37 108:           SEQUENCE {
+ 39  85:             SEQUENCE {
+ 41  13:               SET {
+ 43  11:                 SEQUENCE {
+ 45   3:                   OBJECT IDENTIFIER organizationName (2 5 4 10)
+ 50   4:                   PrintableString 'IETF'
+       :                   }
+       :                 }
+ 56  17:               SET {
+ 58  15:                 SEQUENCE {
+ 60   3:                   OBJECT IDENTIFIER
+       :                     organizationalUnitName (2 5 4 11)
+ 65   8:                   PrintableString 'LAMPS WG'
+       :                   }
+       :                 }
+ 75  49:               SET {
+ 77  47:                 SEQUENCE {
+ 79   3:                   OBJECT IDENTIFIER commonName (2 5 4 3)
+ 84  40:                   PrintableString 'Sample LAMPS RSA Certification Authority'
+       :                   }
+       :                 }
+       :               }
+126  19:             INTEGER
+       :               30 7C 47 40 0F 86 26 3A 1C 62 D2 EB 83 2F 96 C0
+       :               D7 86 94
+       :             }
+147  60:           SEQUENCE {
+149   9:             OBJECT IDENTIFIER rsaOAEP (1 2 840 113549 1 1 7)
+160  47:             SEQUENCE {
+162  15:               [0] {
+164  13:                 SEQUENCE {
+166   9:                   OBJECT IDENTIFIER
+       :                     sha-256 (2 16 840 1 101 3 4 2 1)
+177   0:                   NULL
+       :                   }
+       :                 }
+179  28:               [1] {
+181  26:                 SEQUENCE {
+183   9:                   OBJECT IDENTIFIER
+       :                     pkcs1-MGF (1 2 840 113549 1 1 8)
+194  13:                   SEQUENCE {
+196   9:                     OBJECT IDENTIFIER
+       :                       sha-256 (2 16 840 1 101 3 4 2 1)
+207   0:                     NULL
+       :                     }
+       :                   }
+       :                 }
+       :               }
+       :             }
+209 256:           OCTET STRING
+       :             2C 30 C9 76 48 58 4D DD A0 BC 27 0F 5D 1C 4F D4
+       :             76 65 E2 75 DD 9B 90 DF 88 D2 3F 33 1B 6B E5 93
+       :             CD CD 3D 09 80 4A 4C AD 3D 61 F4 AC D7 D4 08 11
+       :             A9 98 60 93 FD CD 14 C9 9F 80 35 98 FC 08 F8 E6
+       :             F1 B0 66 7D 67 2C 16 58 F8 1F 82 92 81 D6 94 8F
+       :             DC E8 76 04 CD B7 F7 F8 C4 F9 D3 BF C6 0D A2 B1
+       :             C2 B3 10 AC C1 2F 03 A3 1F 8B F3 BD D5 B7 56 38
+       :             EC 4A 5A 3D A6 9E 4A 5E EA 81 8F 55 0A 9F BA 02
+       :             36 B1 38 D0 C8 3F 75 47 76 AD D7 E1 AE 74 1D E9
+       :             5A 83 03 73 60 5D 6E 37 BE 14 8B 32 11 F8 1B 59
+       :             21 A5 A2 63 EE DF 9E D3 C9 F5 5B 85 43 2A E8 8B
+       :             85 E7 F2 23 B6 D5 D4 06 4F 17 B3 81 66 62 4E BB
+       :             80 30 A9 9E 1D 3D A9 F2 83 D3 33 D8 42 E6 FF A1
+       :             3E 08 23 B3 EE ED 5D 7E 89 D9 3A F3 C3 F1 FE 60
+       :             DB AB 39 6A 01 DC 21 5F C0 2F A9 B7 2A 3C 18 30
+       :             A2 F0 07 E8 2F 31 5F DC 90 85 60 BC D8 D6 B6 FE
+       :           }
+469 218:         [1] {
+472   1:           INTEGER 3
+475  44:           [0] {
+477  42:             [1] {
+479   5:               SEQUENCE {
+481   3:                 OBJECT IDENTIFIER curveX25519 (1 3 101 110)
+       :                 }
+486  33:               BIT STRING
+       :               FC 41 AB FA 8C 32 90 F5 43 DD B3 56 07 62 1C 51
+       :               39 01 98 FE D6 80 AD A0 2E 5D 1E F5 4D D4 E2 31
+       :               }
+       :             }
+521  21:           SEQUENCE {
+523   6:             OBJECT IDENTIFIER
+       :               ecdhX963KDF-SHA256 (1 3 132 1 11 1)
+531  11:             SEQUENCE {
+533   9:               OBJECT IDENTIFIER
+       :                 aes128-wrap (2 16 840 1 101 3 4 1 5)
+       :               }
+       :             }
+544 143:           SEQUENCE {
+547 140:             SEQUENCE {
+550 112:               SEQUENCE {
+552  89:                 SEQUENCE {
+554  13:                   SET {
+556  11:                     SEQUENCE {
+558   3:                       OBJECT IDENTIFIER
+       :                         organizationName (2 5 4 10)
+563   4:                       PrintableString 'IETF'
+       :                       }
+       :                     }
+569  17:                   SET {
+571  15:                     SEQUENCE {
+573   3:                       OBJECT IDENTIFIER
+       :                         organizationalUnitName (2 5 4 11)
+578   8:                       PrintableString 'LAMPS WG'
+       :                       }
+       :                     }
+588  53:                   SET {
+590  51:                     SEQUENCE {
+592   3:                       OBJECT IDENTIFIER commonName (2 5 4 3)
+597  44:                       PrintableString
+       :                   'Sample LAMPS Ed25519 Certification Authority'
+       :                       }
+       :                     }
+       :                   }
+643  19:                 INTEGER
+       :               0E 4B 0A 36 A9 EF BA 9C 9A 3B 68 24 8E 52 1D C0
+       :               DE F3 A7
+       :                 }
+664  24:               OCTET STRING
+       :               CE 5E 1E 0F 9E 65 34 61 81 C6 9E 0C 4E 26 6F 55
+       :               F2 95 8B 34 3C B8 E1 D1
+       :               }
+       :             }
+       :           }
+       :         }
+690  76:       SEQUENCE {
+692   9:         OBJECT IDENTIFIER data (1 2 840 113549 1 7 1)
+703  29:         SEQUENCE {
+705   9:           OBJECT IDENTIFIER aes128-CBC (2 16 840 1 101 3 4 1 2)
+716  16:           OCTET STRING 23 0E B4 61 C0 64 F9 61 2C D1 F6 EA 19 4D 93 C7
+       :           }
+734  32:         [0]
+       :           CC 0C 4C 8B D4 A0 B5 BE 3C 20 C5 29 FD B7 38 DE
+       :           0E CF 16 D9 8D 87 14 33 33 D1 F1 60 93 14 BB F2
+       :         }
+       :       }
+       :     }
+       :   }

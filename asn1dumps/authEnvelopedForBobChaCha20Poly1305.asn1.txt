@@ -1,0 +1,92 @@
+  0 557: SEQUENCE {
+  4  11:   OBJECT IDENTIFIER
+       :     authEnvelopedData (1 2 840 113549 1 9 16 1 23)
+ 17 540:   [0] {
+ 21 536:     SEQUENCE {
+ 25   1:       INTEGER 0
+ 28 439:       SET {
+ 32 435:         SEQUENCE {
+ 36   1:           INTEGER 0
+ 39 108:           SEQUENCE {
+ 41  85:             SEQUENCE {
+ 43  13:               SET {
+ 45  11:                 SEQUENCE {
+ 47   3:                   OBJECT IDENTIFIER organizationName (2 5 4 10)
+ 52   4:                   PrintableString 'IETF'
+       :                   }
+       :                 }
+ 58  17:               SET {
+ 60  15:                 SEQUENCE {
+ 62   3:                   OBJECT IDENTIFIER
+       :                     organizationalUnitName (2 5 4 11)
+ 67   8:                   PrintableString 'LAMPS WG'
+       :                   }
+       :                 }
+ 77  49:               SET {
+ 79  47:                 SEQUENCE {
+ 81   3:                   OBJECT IDENTIFIER commonName (2 5 4 3)
+ 86  40:                   PrintableString 'Sample LAMPS RSA Certification Authority'
+       :                   }
+       :                 }
+       :               }
+128  19:             INTEGER
+       :               30 7C 47 40 0F 86 26 3A 1C 62 D2 EB 83 2F 96 C0
+       :               D7 86 94
+       :             }
+149  60:           SEQUENCE {
+151   9:             OBJECT IDENTIFIER rsaOAEP (1 2 840 113549 1 1 7)
+162  47:             SEQUENCE {
+164  15:               [0] {
+166  13:                 SEQUENCE {
+168   9:                   OBJECT IDENTIFIER
+       :                     sha-256 (2 16 840 1 101 3 4 2 1)
+179   0:                   NULL
+       :                   }
+       :                 }
+181  28:               [1] {
+183  26:                 SEQUENCE {
+185   9:                   OBJECT IDENTIFIER
+       :                     pkcs1-MGF (1 2 840 113549 1 1 8)
+196  13:                   SEQUENCE {
+198   9:                     OBJECT IDENTIFIER
+       :                       sha-256 (2 16 840 1 101 3 4 2 1)
+209   0:                     NULL
+       :                     }
+       :                   }
+       :                 }
+       :               }
+       :             }
+211 256:           OCTET STRING
+       :             50 00 7A 36 80 8F 01 D8 3E 07 6E 17 F9 40 07 0D
+       :             75 92 CA 97 A9 D1 B8 70 E3 3B 22 84 33 55 15 CF
+       :             9A 60 FB D5 1B 8D 72 49 41 51 78 52 DD E4 2B 4D
+       :             3F 6F BA 45 45 CC B3 C1 EA A3 FE A7 07 DB C5 0C
+       :             DC 02 CF 50 5E C4 F1 47 4A A6 CC 1E 36 9A 43 F3
+       :             14 00 D5 DC 84 22 BE B8 19 6D F8 E9 46 02 23 0F
+       :             DB 45 7D 91 FA AC B7 A7 BB 38 50 05 75 F8 48 C2
+       :             C1 ED 01 19 B4 D8 22 B1 69 47 D5 4E 80 3B 95 47
+       :             28 F2 F2 0D 31 F9 21 8D AA 92 BB 98 9D 21 5C 4C
+       :             99 E7 D3 2B 20 85 9B 79 6C 96 5B 46 D5 01 06 5F
+       :             F9 C3 2D 1D A6 DC 63 39 27 2A 22 42 F1 C2 CD 08
+       :             E5 2E 2C 6C CB 84 CF 94 50 C6 54 72 36 9C 25 57
+       :             44 A6 B6 4E 7E 87 4A 81 2A 84 7C 71 40 F6 10 0F
+       :             18 F8 0F 95 32 2F A6 3D 82 DD E9 BD 6F 26 02 0C
+       :             52 41 47 CB 31 AB 43 CE 1D 15 64 69 C3 38 AA DD
+       :             07 CD 17 ED 96 3E 36 B6 BB 55 FB 0D 1D 6A 7F 70
+       :           }
+       :         }
+471  70:       SEQUENCE {
+473   9:         OBJECT IDENTIFIER data (1 2 840 113549 1 7 1)
+484  27:         SEQUENCE {
+486  11:           OBJECT IDENTIFIER
+       :             chaCha20Poly1305 (1 2 840 113549 1 9 16 3 18)
+499  12:           OCTET STRING 02 EB 7F 27 AE 4F B2 6E 20 1A 6E 13
+       :           }
+513  28:         [0]
+       :           B6 C2 FF 03 2C 07 BC 4B A6 75 E4 20 1A 60 AA 0D
+       :           2C D6 1A 5F BC 3F DF 71 67 7A 97 76
+       :         }
+543  16:       OCTET STRING 54 05 6B E8 F1 65 2C 31 6E 2F 5A 9D E9 F1 D0 15
+       :       }
+       :     }
+       :   }

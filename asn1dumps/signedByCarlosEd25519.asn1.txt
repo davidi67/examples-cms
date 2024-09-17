@@ -1,0 +1,288 @@
+   0 1156: SEQUENCE {
+   4    9:   OBJECT IDENTIFIER signedData (1 2 840 113549 1 7 2)
+  15 1141:   [0] {
+  19 1137:     SEQUENCE {
+  23    1:       INTEGER 1
+  26   13:       SET {
+  28   11:         SEQUENCE {
+  30    9:           OBJECT IDENTIFIER sha-512 (2 16 840 1 101 3 4 2 3)
+         :           }
+         :         }
+  41   43:       SEQUENCE {
+  43    9:         OBJECT IDENTIFIER data (1 2 840 113549 1 7 1)
+  54   30:         [0] {
+  56   28:           OCTET STRING 'This is some sample content.'
+         :           }
+         :         }
+  86  523:       [0] {
+  90  519:         SEQUENCE {
+  94  441:           SEQUENCE {
+  98    3:             [0] {
+ 100    1:               INTEGER 2
+         :               }
+ 103   19:             INTEGER
+         :             3F 5E 1F 54 24 D1 B4 01 43 78 0F 73 C1 8A 17 85
+         :             1E 76 96
+ 124    5:             SEQUENCE {
+ 126    3:               OBJECT IDENTIFIER curveEd25519 (1 3 101 112)
+         :               }
+ 131   89:             SEQUENCE {
+ 133   13:               SET {
+ 135   11:                 SEQUENCE {
+ 137    3:                   OBJECT IDENTIFIER
+         :                     organizationName (2 5 4 10)
+ 142    4:                   PrintableString 'IETF'
+         :                   }
+         :                 }
+ 148   17:               SET {
+ 150   15:                 SEQUENCE {
+ 152    3:                   OBJECT IDENTIFIER
+         :                     organizationalUnitName (2 5 4 11)
+ 157    8:                   PrintableString 'LAMPS WG'
+         :                   }
+         :                 }
+ 167   53:               SET {
+ 169   51:                 SEQUENCE {
+ 171    3:                   OBJECT IDENTIFIER commonName (2 5 4 3)
+ 176   44:                   PrintableString
+         :                   'Sample LAMPS Ed25519 Certification Authority'
+         :                   }
+         :                 }
+         :               }
+ 222   32:             SEQUENCE {
+ 224   13:               UTCTime 15/12/2020 21:35:44 GMT
+ 239   15:               GeneralizedTime 15/12/2052 21:35:44 GMT
+         :               }
+ 256   58:             SEQUENCE {
+ 258   13:               SET {
+ 260   11:                 SEQUENCE {
+ 262    3:                   OBJECT IDENTIFIER
+         :                     organizationName (2 5 4 10)
+ 267    4:                   PrintableString 'IETF'
+         :                   }
+         :                 }
+ 273   17:               SET {
+ 275   15:                 SEQUENCE {
+ 277    3:                   OBJECT IDENTIFIER
+         :                     organizationalUnitName (2 5 4 11)
+ 282    8:                   PrintableString 'LAMPS WG'
+         :                   }
+         :                 }
+ 292   22:               SET {
+ 294   20:                 SEQUENCE {
+ 296    3:                   OBJECT IDENTIFIER commonName (2 5 4 3)
+ 301   13:                   PrintableString 'Carlos Turing'
+         :                   }
+         :                 }
+         :               }
+ 316   42:             SEQUENCE {
+ 318    5:               SEQUENCE {
+ 320    3:                 OBJECT IDENTIFIER curveEd25519 (1 3 101 112)
+         :                 }
+ 325   33:               BIT STRING
+         :             C2 CE 80 32 2C DE 61 C8 4D 84 4D 60 EF 91 9C E7
+         :             9D AE AE 7F 1E E4 07 5D 23 F2 00 A6 92 F7 C8 AD
+         :               }
+ 360  176:             [3] {
+ 363  173:               SEQUENCE {
+ 366   12:                 SEQUENCE {
+ 368    3:                   OBJECT IDENTIFIER
+         :                     basicConstraints (2 5 29 19)
+ 373    1:                   BOOLEAN TRUE
+ 376    2:                   OCTET STRING, encapsulates {
+ 378    0:                     SEQUENCE {}
+         :                     }
+         :                   }
+ 380   23:                 SEQUENCE {
+ 382    3:                   OBJECT IDENTIFIER
+         :                     certificatePolicies (2 5 29 32)
+ 387   16:                   OCTET STRING, encapsulates {
+ 389   14:                     SEQUENCE {
+ 391   12:                       SEQUENCE {
+ 393   10:                         OBJECT IDENTIFIER
+         :                           nistTestPolicy1 (2 16 840 1 101 3 2 1 48 1)
+         :                         }
+         :                       }
+         :                     }
+         :                   }
+ 405   31:                 SEQUENCE {
+ 407    3:                   OBJECT IDENTIFIER
+         :                     subjectAltName (2 5 29 17)
+ 412   24:                   OCTET STRING, encapsulates {
+ 414   22:                     SEQUENCE {
+ 416   20:                       [1] 'carlos@smime.example'
+         :                       }
+         :                     }
+         :                   }
+ 438   19:                 SEQUENCE {
+ 440    3:                   OBJECT IDENTIFIER extKeyUsage (2 5 29 37)
+ 445   12:                   OCTET STRING, encapsulates {
+ 447   10:                     SEQUENCE {
+ 449    8:                       OBJECT IDENTIFIER
+         :                         emailProtection (1 3 6 1 5 5 7 3 4)
+         :                       }
+         :                     }
+         :                   }
+ 459   14:                 SEQUENCE {
+ 461    3:                   OBJECT IDENTIFIER keyUsage (2 5 29 15)
+ 466    1:                   BOOLEAN TRUE
+ 469    4:                   OCTET STRING, encapsulates {
+ 471    2:                     BIT STRING 6 unused bits
+         :                       '11'B
+         :                     }
+         :                   }
+ 475   29:                 SEQUENCE {
+ 477    3:                   OBJECT IDENTIFIER
+         :                     subjectKeyIdentifier (2 5 29 14)
+ 482   22:                   OCTET STRING, encapsulates {
+ 484   20:                     OCTET STRING
+         :             64 85 E3 3B 9C 1D 5A CD E6 0B BA 1A 7F 08 BE C4
+         :             9C CC 84 3F
+         :                     }
+         :                   }
+ 506   31:                 SEQUENCE {
+ 508    3:                   OBJECT IDENTIFIER
+         :                     authorityKeyIdentifier (2 5 29 35)
+ 513   24:                   OCTET STRING, encapsulates {
+ 515   22:                     SEQUENCE {
+ 517   20:                       [0]
+         :             6B A2 95 7D BA 14 9B E4 2D 04 D1 07 A4 D1 82 E4
+         :             2E 6B 8C B5
+         :                       }
+         :                     }
+         :                   }
+         :                 }
+         :               }
+         :             }
+ 539    5:           SEQUENCE {
+ 541    3:             OBJECT IDENTIFIER curveEd25519 (1 3 101 112)
+         :             }
+ 546   65:           BIT STRING
+         :             C1 51 90 59 B7 72 E8 54 08 A5 31 6C 69 6B C6 DB
+         :             F5 12 D9 F9 D2 E8 1F 81 CE 00 AB 90 64 0A 59 7D
+         :             56 82 44 E3 E0 C1 0E A8 BF B4 70 55 CB AF B6 50
+         :             D8 34 14 A3 68 97 C9 30 2E E7 C0 51 E9 BB 5C 09
+         :           }
+         :         }
+ 613  543:       SET {
+ 617  539:         SEQUENCE {
+ 621    1:           INTEGER 1
+ 624  112:           SEQUENCE {
+ 626   89:             SEQUENCE {
+ 628   13:               SET {
+ 630   11:                 SEQUENCE {
+ 632    3:                   OBJECT IDENTIFIER
+         :                     organizationName (2 5 4 10)
+ 637    4:                   PrintableString 'IETF'
+         :                   }
+         :                 }
+ 643   17:               SET {
+ 645   15:                 SEQUENCE {
+ 647    3:                   OBJECT IDENTIFIER
+         :                     organizationalUnitName (2 5 4 11)
+ 652    8:                   PrintableString 'LAMPS WG'
+         :                   }
+         :                 }
+ 662   53:               SET {
+ 664   51:                 SEQUENCE {
+ 666    3:                   OBJECT IDENTIFIER commonName (2 5 4 3)
+ 671   44:                   PrintableString
+         :                   'Sample LAMPS Ed25519 Certification Authority'
+         :                   }
+         :                 }
+         :               }
+ 717   19:             INTEGER
+         :             3F 5E 1F 54 24 D1 B4 01 43 78 0F 73 C1 8A 17 85
+         :             1E 76 96
+         :             }
+ 738   11:           SEQUENCE {
+ 740    9:             OBJECT IDENTIFIER
+         :               sha-512 (2 16 840 1 101 3 4 2 3)
+         :             }
+ 751  332:           [0] {
+ 755   24:             SEQUENCE {
+ 757    9:               OBJECT IDENTIFIER
+         :                 contentType (1 2 840 113549 1 9 3)
+ 768   11:               SET {
+ 770    9:                 OBJECT IDENTIFIER data (1 2 840 113549 1 7 1)
+         :                 }
+         :               }
+ 781   79:             SEQUENCE {
+ 783    9:               OBJECT IDENTIFIER
+         :                 messageDigest (1 2 840 113549 1 9 4)
+ 794   66:               SET {
+ 796   64:                 OCTET STRING
+         :             0E E2 B9 4D FE 6A 0D 90 BA 2D C9 36 2D 02 11 B0
+         :             76 A4 B2 35 11 EC E0 3F E5 A5 62 A7 FF B7 50 3E
+         :             CD 81 A2 E5 AA 9C 59 54 42 40 9E 56 69 5D 53 BA
+         :             CE 86 07 5B 14 EC 48 62 C5 F2 3C 6F F9 56 10 C3
+         :                 }
+         :               }
+ 862  222:             SEQUENCE {
+ 865   11:               OBJECT IDENTIFIER
+         :                 signingCertificateV2 (1 2 840 113549 1 9 16 2 47)
+ 878  206:               SET {
+ 881  203:                 SEQUENCE {
+ 884  200:                   SEQUENCE {
+ 887  197:                     SEQUENCE {
+ 890   11:                       SEQUENCE {
+ 892    9:                         OBJECT IDENTIFIER
+         :                           sha-512 (2 16 840 1 101 3 4 2 3)
+         :                         }
+ 903   64:                       OCTET STRING
+         :             CE 3D 8E 72 CE EE 3B AE B4 DF 71 2B 7C CE 85 50
+         :             2D E6 91 6C 2A E4 3D 8F D2 75 19 81 DB F4 D7 18
+         :             50 C7 F0 6B 24 7C B4 C9 E9 33 1B 8F BC C8 CC C0
+         :             03 CE 63 13 F3 5E 51 42 8E 24 B1 F1 82 E9 21 06
+ 969  116:                       SEQUENCE {
+ 971   93:                         SEQUENCE {
+ 973   91:                           [4] {
+ 975   89:                             SEQUENCE {
+ 977   13:                               SET {
+ 979   11:                                 SEQUENCE {
+ 981    3:                                   OBJECT IDENTIFIER
+         :                                     organizationName (2 5 4 10)
+ 986    4:                                   PrintableString 'IETF'
+         :                                   }
+         :                                 }
+ 992   17:                               SET {
+ 994   15:                                 SEQUENCE {
+ 996    3:                                   OBJECT IDENTIFIER
+         :                                     organizationalUnitName (2 5 4 11)
+1001    8:                                   PrintableString 'LAMPS WG'
+         :                                   }
+         :                                 }
+1011   53:                               SET {
+1013   51:                                 SEQUENCE {
+1015    3:                                   OBJECT IDENTIFIER
+         :                                     commonName (2 5 4 3)
+1020   44:                                   PrintableString
+         :                   'Sample LAMPS Ed25519 Certification Authority'
+         :                                   }
+         :                                 }
+         :                               }
+         :                             }
+         :                           }
+1066   19:                         INTEGER
+         :             3F 5E 1F 54 24 D1 B4 01 43 78 0F 73 C1 8A 17 85
+         :             1E 76 96
+         :                         }
+         :                       }
+         :                     }
+         :                   }
+         :                 }
+         :               }
+         :             }
+1087    5:           SEQUENCE {
+1089    3:             OBJECT IDENTIFIER curveEd25519 (1 3 101 112)
+         :             }
+1094   64:           OCTET STRING
+         :             2B 5A 65 0F B1 F2 08 7F C4 33 78 0C 52 51 8D 81
+         :             4F 22 BD 5E 2A 92 84 ED E9 9F E2 6C D2 EF DA AA
+         :             8A D2 E3 EA 76 74 31 69 1C B2 F0 12 21 6F D2 44
+         :             93 21 3B 96 C3 54 82 AA 01 E9 9C AC A8 7C AA 09
+         :           }
+         :         }
+         :       }
+         :     }
+         :   }

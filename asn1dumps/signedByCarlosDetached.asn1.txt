@@ -1,0 +1,182 @@
+  0 692: SEQUENCE {
+  4   9:   OBJECT IDENTIFIER signedData (1 2 840 113549 1 7 2)
+ 15 677:   [0] {
+ 19 673:     SEQUENCE {
+ 23   1:       INTEGER 3
+ 26  13:       SET {
+ 28  11:         SEQUENCE {
+ 30   9:           OBJECT IDENTIFIER sha-512 (2 16 840 1 101 3 4 2 3)
+       :           }
+       :         }
+ 41  11:       SEQUENCE {
+ 43   9:         OBJECT IDENTIFIER data (1 2 840 113549 1 7 1)
+       :         }
+ 54 523:       [0] {
+ 58 519:         SEQUENCE {
+ 62 441:           SEQUENCE {
+ 66   3:             [0] {
+ 68   1:               INTEGER 2
+       :               }
+ 71  19:             INTEGER
+       :               3F 5E 1F 54 24 D1 B4 01 43 78 0F 73 C1 8A 17 85
+       :               1E 76 96
+ 92   5:             SEQUENCE {
+ 94   3:               OBJECT IDENTIFIER curveEd25519 (1 3 101 112)
+       :               }
+ 99  89:             SEQUENCE {
+101  13:               SET {
+103  11:                 SEQUENCE {
+105   3:                   OBJECT IDENTIFIER organizationName (2 5 4 10)
+110   4:                   PrintableString 'IETF'
+       :                   }
+       :                 }
+116  17:               SET {
+118  15:                 SEQUENCE {
+120   3:                   OBJECT IDENTIFIER
+       :                     organizationalUnitName (2 5 4 11)
+125   8:                   PrintableString 'LAMPS WG'
+       :                   }
+       :                 }
+135  53:               SET {
+137  51:                 SEQUENCE {
+139   3:                   OBJECT IDENTIFIER commonName (2 5 4 3)
+144  44:                   PrintableString
+       :                   'Sample LAMPS Ed25519 Certification Authority'
+       :                   }
+       :                 }
+       :               }
+190  32:             SEQUENCE {
+192  13:               UTCTime 15/12/2020 21:35:44 GMT
+207  15:               GeneralizedTime 15/12/2052 21:35:44 GMT
+       :               }
+224  58:             SEQUENCE {
+226  13:               SET {
+228  11:                 SEQUENCE {
+230   3:                   OBJECT IDENTIFIER organizationName (2 5 4 10)
+235   4:                   PrintableString 'IETF'
+       :                   }
+       :                 }
+241  17:               SET {
+243  15:                 SEQUENCE {
+245   3:                   OBJECT IDENTIFIER
+       :                     organizationalUnitName (2 5 4 11)
+250   8:                   PrintableString 'LAMPS WG'
+       :                   }
+       :                 }
+260  22:               SET {
+262  20:                 SEQUENCE {
+264   3:                   OBJECT IDENTIFIER commonName (2 5 4 3)
+269  13:                   PrintableString 'Carlos Turing'
+       :                   }
+       :                 }
+       :               }
+284  42:             SEQUENCE {
+286   5:               SEQUENCE {
+288   3:                 OBJECT IDENTIFIER curveEd25519 (1 3 101 112)
+       :                 }
+293  33:               BIT STRING
+       :               C2 CE 80 32 2C DE 61 C8 4D 84 4D 60 EF 91 9C E7
+       :               9D AE AE 7F 1E E4 07 5D 23 F2 00 A6 92 F7 C8 AD
+       :               }
+328 176:             [3] {
+331 173:               SEQUENCE {
+334  12:                 SEQUENCE {
+336   3:                   OBJECT IDENTIFIER
+       :                     basicConstraints (2 5 29 19)
+341   1:                   BOOLEAN TRUE
+344   2:                   OCTET STRING, encapsulates {
+346   0:                     SEQUENCE {}
+       :                     }
+       :                   }
+348  23:                 SEQUENCE {
+350   3:                   OBJECT IDENTIFIER
+       :                     certificatePolicies (2 5 29 32)
+355  16:                   OCTET STRING, encapsulates {
+357  14:                     SEQUENCE {
+359  12:                       SEQUENCE {
+361  10:                         OBJECT IDENTIFIER
+       :                           nistTestPolicy1 (2 16 840 1 101 3 2 1 48 1)
+       :                         }
+       :                       }
+       :                     }
+       :                   }
+373  31:                 SEQUENCE {
+375   3:                   OBJECT IDENTIFIER subjectAltName (2 5 29 17)
+380  24:                   OCTET STRING, encapsulates {
+382  22:                     SEQUENCE {
+384  20:                       [1] 'carlos@smime.example'
+       :                       }
+       :                     }
+       :                   }
+406  19:                 SEQUENCE {
+408   3:                   OBJECT IDENTIFIER extKeyUsage (2 5 29 37)
+413  12:                   OCTET STRING, encapsulates {
+415  10:                     SEQUENCE {
+417   8:                       OBJECT IDENTIFIER
+       :                         emailProtection (1 3 6 1 5 5 7 3 4)
+       :                       }
+       :                     }
+       :                   }
+427  14:                 SEQUENCE {
+429   3:                   OBJECT IDENTIFIER keyUsage (2 5 29 15)
+434   1:                   BOOLEAN TRUE
+437   4:                   OCTET STRING, encapsulates {
+439   2:                     BIT STRING 6 unused bits
+       :                       '11'B
+       :                     }
+       :                   }
+443  29:                 SEQUENCE {
+445   3:                   OBJECT IDENTIFIER
+       :                     subjectKeyIdentifier (2 5 29 14)
+450  22:                   OCTET STRING, encapsulates {
+452  20:                     OCTET STRING
+       :               64 85 E3 3B 9C 1D 5A CD E6 0B BA 1A 7F 08 BE C4
+       :               9C CC 84 3F
+       :                     }
+       :                   }
+474  31:                 SEQUENCE {
+476   3:                   OBJECT IDENTIFIER
+       :                     authorityKeyIdentifier (2 5 29 35)
+481  24:                   OCTET STRING, encapsulates {
+483  22:                     SEQUENCE {
+485  20:                       [0]
+       :               6B A2 95 7D BA 14 9B E4 2D 04 D1 07 A4 D1 82 E4
+       :               2E 6B 8C B5
+       :                       }
+       :                     }
+       :                   }
+       :                 }
+       :               }
+       :             }
+507   5:           SEQUENCE {
+509   3:             OBJECT IDENTIFIER curveEd25519 (1 3 101 112)
+       :             }
+514  65:           BIT STRING
+       :             C1 51 90 59 B7 72 E8 54 08 A5 31 6C 69 6B C6 DB
+       :             F5 12 D9 F9 D2 E8 1F 81 CE 00 AB 90 64 0A 59 7D
+       :             56 82 44 E3 E0 C1 0E A8 BF B4 70 55 CB AF B6 50
+       :             D8 34 14 A3 68 97 C9 30 2E E7 C0 51 E9 BB 5C 09
+       :           }
+       :         }
+581 113:       SET {
+583 111:         SEQUENCE {
+585   1:           INTEGER 3
+588  20:           [0]
+       :             64 85 E3 3B 9C 1D 5A CD E6 0B BA 1A 7F 08 BE C4
+       :             9C CC 84 3F
+610  11:           SEQUENCE {
+612   9:             OBJECT IDENTIFIER sha-512 (2 16 840 1 101 3 4 2 3)
+       :             }
+623   5:           SEQUENCE {
+625   3:             OBJECT IDENTIFIER curveEd25519 (1 3 101 112)
+       :             }
+630  64:           OCTET STRING
+       :             9C 39 BF 30 2C BF 5B EA 4B 81 7C F4 A1 D3 52 F7
+       :             77 71 52 7B 7A ED DB B0 E1 E6 D2 BD 33 3A EB C7
+       :             9D 89 D4 EE 32 C7 B3 77 88 91 37 9F 01 46 AD 10
+       :             A9 DF B0 87 37 48 D6 D8 7C 25 72 A2 E4 27 00 07
+       :           }
+       :         }
+       :       }
+       :     }
+       :   }
